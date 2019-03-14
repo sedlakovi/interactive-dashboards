@@ -45,6 +45,8 @@ V terminálu spusťte:
 
     pip3 install --upgrade pandas numpy jupyter plotly dash dash-html-components dash-core-components dash-table dash-daq
 
+_Tip: Na Windows se do terminálu kopíruje pravým tlačítkem myši._
+
 Instalace by měla skončit se slovy `Successfully installed`, po kterých následuje výpis hromady balíčků s verzemi.
 
 ![Instalace balíčků hotova](packages-finish.jpg)
@@ -60,7 +62,8 @@ Nyní zkontrolujte instalaci.
 
 ### 1.
 
-Stáhněte si [testovací skript](dash-kontrola.py).
+Stáhněte si [testovací skript](dash-kontrola.py) (klikněte pravým tlačítkem a "uložit
+odkaz jako...").
 
 ### 2.
 
@@ -90,5 +93,6 @@ Měli byste vidět zhruba toto:
 
 ### 3.
 
-Podívejte se na odkaz, který je vypsaný v terminálu, tj. http://127.0.0.1:8050/
+Podívejte se na odkaz, který je vypsaný v terminálu, tj.
+[http://127.0.0.1:8050/](http://127.0.0.1:8050/)
 Pokud vidíte smysluplné slovo, instalaci jste provedli úspěšně, gratulujeme!

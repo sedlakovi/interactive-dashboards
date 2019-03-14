@@ -36,8 +36,8 @@ Nainstalujte Python **3**. Můžete použít [návod z kurzu vizualizace](https:
 
 **Důležité** - pokud máte v uživatelském jménu do Windows mezery nebo např. háčky, čárky, zvolte "Customize installation" a vyberte cestu, která nebude uvnitř "C:\Users\Vaše jméno". Jinak můžete mít problém v pozdějších krocích s instalací balíčků.
 
-Pozn.: Na Linuxu budete potřebovat ještě zvlášť nainstalovat `pip`. V Ubuntu je to
-balík `python3-pip`.
+Pozn.: Na Linuxu budete potřebovat ještě zvlášť nainstalovat `pip`. V Ubuntu pomocí
+`sudo apt install python3-pip`.
 
 ### 2.
 

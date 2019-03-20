@@ -6,19 +6,19 @@ import dash_html_components as html
 import pandas as pd
 import plotly.graph_objs as go
 
-# Data již byla předzpracována v Jupyter Notebooku plotly.ipynb
+
 drinks = pd.read_csv('drinks_country_codes2.csv')
 
-# Vytvoříme seznam popisků
+
 text = []
 for i, row in drinks.iterrows():
 	text.append(
 		'Country: {}<br>Total litres of pure alcohol per person per year: {}'.format(row.country, row.total_litres_of_pure_alcohol)
 	)
-# Pro vykreslení použijeme typ choropleth
+
 data = [dict(
 	type = 'choropleth',
-	# Pro zobrazení použijeme hotovou barevnou škálu Jet
+
 	colorscale = 'Jet',
 	autocolorscale = False,
 	locations = drinks.country_code_3,
@@ -29,16 +29,13 @@ data = [dict(
 			color = 'rgb(255,255,255)',
 			width = 2
 		)),
-	# Popišeme legendu
+
 	colorbar = dict(
 		title = 'Total litres of pure alcohol per person per year',
-		# Následující parametry nastavují poměr délky legendy k obrázku a její pozici
-		# len = 0.3,
-		# y = 0.45
+
 	)
 )]
 
-# Pro vykreslení celého světu použijeme typ projekce Mercator
 layout = dict(
 	# autosize = False,
 	# width = 1000,
@@ -87,7 +84,6 @@ Data are taken from [FiveThirtyEight](https://github.com/fivethirtyeight/data/tr
 	[Input(component_id='drinks-map', component_property='clickData')],
 )
 def update_country_graph(clickData):
-	#country_code = clickData['points']['location']
 	drinks_country = drinks[drinks.country_code_3 == clickData['points'][0]['location']].head(1)
 	trace1 = go.Bar(x = [0], y = drinks_country.beer_servings.values, name = 'Beer', width=0.5, marker=dict(color='#ef6236'))
 	trace2 = go.Bar(x = [1], y = drinks_country.wine_servings.values, name = 'Wine', width=0.5, marker=dict(color='#811a17'))

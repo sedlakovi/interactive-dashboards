@@ -37,8 +37,6 @@ data = [dict(
 )]
 
 layout = dict(
-	# autosize = False,
-	# width = 1000,
 	height = 300,
 	margin=dict(l = 0, r = 0, t = 0, b = 0),
 	geo=dict(

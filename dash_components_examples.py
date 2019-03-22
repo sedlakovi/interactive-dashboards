@@ -3,7 +3,6 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-import pandas as pd
 
 app = dash.Dash()
 app.layout = html.Div([
@@ -14,19 +13,19 @@ app.layout = html.Div([
     dcc.Dropdown(
     id='example-dropdown',
       options=[
-      {'label': 'Read books', 'value': 'read'},
-      {'label': 'Listen to music', 'value': 'music'},
+      {'label': 'Číst knihy', 'value': 'read'},
+      {'label': 'Poslouchat hudbu', 'value': 'music'},
     ],
     value=''
     ),
     html.Div([dcc.RadioItems(
         options=[
-            {'label': 'Read books', 'value': 'read'},
-            {'label': 'Listen to music', 'value': 'music'}
+            {'label': 'Číst knihy', 'value': 'read'},
+            {'label': 'Poslouchat hudbu', 'value': 'music'}
         ],
         value='music'
     )], style={'width': '20%', 'display': 'block'}),
-    html.Button('Click me!', id='button'),
+    html.Button('Klikněte zde!', id='button'),
 ])
 
 if __name__ == '__main__':

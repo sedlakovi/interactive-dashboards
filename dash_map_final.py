@@ -87,7 +87,6 @@ Data jsou z [FiveThirtyEight](https://github.com/fivethirtyeight/data/tree/maste
 	[Input(component_id='drinks-map', component_property='clickData')],
 )
 def update_country_graph(clickData):
-	#country_code = clickData['points']['location']
 	drinks_country = drinks[drinks.country_code_3 == clickData['points'][0]['location']].head(1)
 	trace1 = go.Bar(x = [0], y = drinks_country.beer_servings.values, name = 'Pivo', width=0.5, marker=dict(color='#ef6236'))
 	trace2 = go.Bar(x = [1], y = drinks_country.wine_servings.values, name = 'Víno', width=0.5, marker=dict(color='#811a17'))

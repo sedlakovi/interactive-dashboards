@@ -2,6 +2,13 @@
 
 Sem budeme dávat odkazy na prezentace z workshopu.
 
+- [Pandas](https://nbviewer.jupyter.org/github/sedlakovi/interactive-dashboards/blob/master/pandas.ipynb)
+- [Vizualizace dat](https://docs.google.com/presentation/d/1FH0bQPWmnc0yKnKPWI4bgRP-DgRUY2IxC7_dzQhxYig/edit?usp=sharing)
+- [Plotly](https://nbviewer.jupyter.org/github/sedlakovi/interactive-dashboards/blob/master/plotly.ipynb)
+- [Dash](https://docs.google.com/presentation/d/1o8NWfC4TjvxJ3u8SIzr5BldppWFBQGM7yWvYEuBgdEY/edit?usp=sharing)
+- [Dash - cvičení](https://github.com/sedlakovi/interactive-dashboards/blob/master/dash_cviceni.md)
+
+
 # Cheat sheety
 
 - [Plot.ly](https://github.com/sedlakovi/interactive-dashboards/blob/master/docs/plotly_cheat_sheet.pdf)

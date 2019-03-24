@@ -19,6 +19,14 @@ Sem budeme dávat odkazy na prezentace z workshopu.
 - [Prezentace v Jupyteru](https://github.com/sedlakovi/data-storytelling/blob/master/prezentace_jupyter_notebook.md)
 - [Markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html)
 
+
+# Datové zdroje
+
+- [FiveThrtyEight](https://data.fivethirtyeight.com/)
+- [Seznam vzorových sad dat z R](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
+- [Data z Kaggle (pro stažení je nutné zdarma se zaregistrovat)](https://www.kaggle.com/datasets)
+
+
 # Užitečné odkazy
 
 - [Galerie webů vytvořených v Dashi](https://dash.plot.ly/gallery) (včetně zdrojových kódů)

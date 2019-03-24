@@ -112,3 +112,62 @@ Měli byste vidět zhruba toto:
 Podívejte se na odkaz, který je vypsaný v terminálu, tj.
 [http://127.0.0.1:8050/](http://127.0.0.1:8050/)
 Pokud vidíte smysluplné slovo, instalaci jste provedli úspěšně, gratulujeme!
+
+# Nasazení na veřejný web
+
+# Nasazení aplikace Dash na externí server
+
+[Návod na stránkách Dash](https://plot.ly/dash/deployment)
+
+Všechny kroky budeme provádět ve složce, kde máte aplikaci. Předpokládáme, že se jmenuje `app.py`.
+
+1. Stáhněte si [`requirements.txt`](https://github.com/sedlakovi/interactive-dashboards/blob/master/requirements.txt) se seznamem potřebných knihoven.
+
+2. Nainstalujte Heroku a založte si účet na [Heroku](https://heroku.com)
+
+[Návod na stránkách Heroku](https://devcenter.heroku.com/articles/heroku-cli)
+
+```
+heroku login
+```
+
+3. Ujistěte se, že v aplikaci máte `server = app.server`. Proměnná se musí jmenovat `server`, budeme se na ni odkazovat v dalším kroku.
+
+4. Vytvořte konfigurační soubor `Procfile` bez přípony a s následujícím obsahem:
+
+```
+web: gunicorn app:server
+```
+
+**Důležité: `app` se musí shodovat s názvem aplikace (v tomto případě je název aplikace `app.py`). Je potřeba, aby se `Procfile` jmenoval přesně takto bez přípony, ne `Procfile.txt`.**
+
+
+5. Vytvořte aplikaci na Heroku, inicializujte Git a nasaďte aplikaci
+
+```
+git init  # Z aktuální složky děláme Git projekt 
+heroku create moje-aplikace # změňte 'moje aplikace' na unikátní název
+git add . # přideá soubory do git
+git commit -m 'Initial commit'
+git push heroku master # nasadí kôd do heroku
+heroku ps:scale web=1  # spustí aplikaci s 1 heroku "dyno"
+```
+
+Vaše  aplikace bude dostupná na adrese `https://moje-aplikace.herokuapp.com`.
+
+6. Ladění
+
+Podívejte se na logy heroku
+```
+heroku logs -a app
+```
+Logy se také dají vidět po přihlášení na stránce [heroku](https://heroku.com) v sekci aplikace Activity -> View building log.
+
+7. Doplnění kódu a opětovné nasazení
+
+```
+git status # prohlednout změny
+git add .  # přidat všechny změny do commitu
+git commit -m 'popis změny'
+git push heroku master
+```

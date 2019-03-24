@@ -22,7 +22,7 @@ Sem budeme dávat odkazy na prezentace z workshopu.
 
 # Datové zdroje
 
-- [FiveThrtyEight](https://data.fivethirtyeight.com/)
+- [FiveThirtyEight](https://data.fivethirtyeight.com/)
 - [Seznam vzorových sad dat z R](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
 - [Data z Kaggle (pro stažení je nutné zdarma se zaregistrovat)](https://www.kaggle.com/datasets)
 

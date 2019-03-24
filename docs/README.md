@@ -2,6 +2,13 @@
 
 Sem budeme dávat odkazy na prezentace z workshopu.
 
+- [Pandas](https://nbviewer.jupyter.org/github/sedlakovi/interactive-dashboards/blob/master/pandas.ipynb)
+- [Vizualizace dat](https://docs.google.com/presentation/d/1FH0bQPWmnc0yKnKPWI4bgRP-DgRUY2IxC7_dzQhxYig/edit?usp=sharing)
+- [Plotly](https://nbviewer.jupyter.org/github/sedlakovi/interactive-dashboards/blob/master/plotly.ipynb)
+- [Dash](https://docs.google.com/presentation/d/1o8NWfC4TjvxJ3u8SIzr5BldppWFBQGM7yWvYEuBgdEY/edit?usp=sharing)
+- [Dash - cvičení](https://github.com/sedlakovi/interactive-dashboards/blob/master/dash_cviceni.md)
+
+
 # Cheat sheety
 
 - [Plot.ly](https://github.com/sedlakovi/interactive-dashboards/blob/master/docs/plotly_cheat_sheet.pdf)
@@ -12,9 +19,18 @@ Sem budeme dávat odkazy na prezentace z workshopu.
 - [Prezentace v Jupyteru](https://github.com/sedlakovi/data-storytelling/blob/master/prezentace_jupyter_notebook.md)
 - [Markdown](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html)
 
+
+# Datové zdroje
+
+- [FiveThrtyEight](https://data.fivethirtyeight.com/)
+- [Seznam vzorových sad dat z R](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
+- [Data z Kaggle (pro stažení je nutné zdarma se zaregistrovat)](https://www.kaggle.com/datasets)
+
+
 # Užitečné odkazy
 
 - [Galerie webů vytvořených v Dashi](https://dash.plot.ly/gallery) (včetně zdrojových kódů)
+- [Dash Recipes](https://github.com/plotly/dash-recipes) - kuchařka aplikací vytvořených při odpovídání na otázky na Dash fóru.
 - [Grafy v Plotly](https://plot.ly/python/basic-charts/)
 
 # Instalace

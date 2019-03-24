@@ -116,8 +116,6 @@ Pokud vidíte smysluplné slovo, instalaci jste provedli úspěšně, gratulujem
 
 # Nasazení na veřejný web
 
-# Nasazení aplikace Dash na externí server
-
 [Návod na stránkách Dash](https://plot.ly/dash/deployment)
 
 Všechny kroky budeme provádět ve složce, kde máte aplikaci. Předpokládáme, že se jmenuje `app.py`.

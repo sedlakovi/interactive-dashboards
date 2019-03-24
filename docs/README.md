@@ -30,6 +30,7 @@ Sem budeme dávat odkazy na prezentace z workshopu.
 # Užitečné odkazy
 
 - [Galerie webů vytvořených v Dashi](https://dash.plot.ly/gallery) (včetně zdrojových kódů)
+- [Dash Recipes](https://github.com/plotly/dash-recipes) - kuchařka aplikací vytvořených při odpovídání na otázky na Dash fóru.
 - [Grafy v Plotly](https://plot.ly/python/basic-charts/)
 
 # Instalace
